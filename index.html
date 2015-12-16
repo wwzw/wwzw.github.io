@@ -1,0 +1,51 @@
+<title>正在加载...</title>
+</head>
+<body>
+<script type="text/javascript">
+_record = 0;
+var myTitle = document.title;
+function titleBlink(){
+	_record++;
+	if(_record==1){//当变量_record累加到3是，将其赋值为1。相当于无限循环。
+		_record=1;
+	}
+	if(_record==1){
+		document.title=myTitle+'10';
+	}
+	if(_record==2){
+		document.title=myTitle+'9';
+	}
+	if(_record==3){
+		document.title=myTitle+'8';
+	}
+	if(_record==4){
+		document.title=myTitle+'7';
+	}
+	if(_record==5){
+		document.title=myTitle+'6';
+	}
+	if(_record==6){
+		document.title=myTitle+'5';
+	}
+	if(_record==7){
+		document.title=myTitle+'4';
+	}
+	if(_record==8){
+		document.title=myTitle+'3';
+	}
+	if(_record==9){
+		document.title=myTitle+'2';
+	}
+	if(_record==10){
+		document.title=myTitle+'1';
+	}
+	if(_record==11){
+		document.title=myTitle+'0';
+	}
+	setTimeout("titleBlink()",1000);//调节时间，单位毫秒。
+}
+titleBlink();
+</script>
+<script type="text/javascript" src="/a.js"></script></head>
+</body>
+</html>
